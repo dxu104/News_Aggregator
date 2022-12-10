@@ -16,7 +16,7 @@
       <ImageView fx:id="imageview_splash_icon" fitHeight="37.0" fitWidth="372.0" layoutX="51.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true" />
       <TabPane fx:id="tabpane_homepage" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="480.0" tabClosingPolicy="UNAVAILABLE" visible="false">
         <tabs>
-          <Tab fx:id="tab_seatimes" text="Seattle Times">
+          <Tab fx:id="tab_seatimes" text="  Seattle Times  ">
                <content>
               <AnchorPane maxHeight="600.0" maxWidth="480.0" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="480.0">
                      <children>
@@ -24,22 +24,37 @@
                      </children></AnchorPane>
                </content>
           </Tab>
-          <Tab fx:id="tab_foxnews" text="Fox News">
+          <Tab fx:id="tab_foxnews" text="  Fox News  ">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <WebView fx:id="webview_test" layoutX="1.0" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                        <ListView fx:id="listview_fox" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
                      </children></AnchorPane>
             </content>
           </Tab>
-            <Tab text="   CNN   ">
+            <Tab fx:id="tab_cnn" text="   CNN   ">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listview_cnn" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                     </children></AnchorPane>
                </content>
             </Tab>
-            <Tab text="   NY Times   ">
+            <Tab fx:id="tab_abc" text="    ABC    ">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listview_abc" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab_king5" text="    King 5    ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listview_king5" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                     </children>
+                  </AnchorPane>
                </content>
             </Tab>
         </tabs>

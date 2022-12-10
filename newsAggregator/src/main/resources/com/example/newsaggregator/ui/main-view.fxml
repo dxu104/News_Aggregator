@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorpane_homepage" prefHeight="800.0" prefWidth="480.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.MainController">
+   <children>
+      <ImageView fx:id="imageview_splash_back" fitHeight="800.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageview_splash_icon" fitHeight="37.0" fitWidth="372.0" layoutX="51.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true" />
+      <TabPane fx:id="tabpane_homepage" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="480.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+        <tabs>
+          <Tab fx:id="tab_seatimes" text="Seattle Times">
+               <content>
+              <AnchorPane maxHeight="600.0" maxWidth="480.0" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="480.0">
+                     <children>
+                        <ListView fx:id="listview_seattle" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                     </children></AnchorPane>
+               </content>
+          </Tab>
+          <Tab fx:id="tab_foxnews" text="Fox News">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <WebView fx:id="webview_test" layoutX="1.0" maxHeight="712.0" maxWidth="480.0" prefHeight="712.0" prefWidth="480.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="   CNN   ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="   NY Times   ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="mainTitleLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="200.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: linear-gradient(#6FB1FC, #4364F7, #0052D4);" text="News Aggregator" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#949494" />
+                  <Stop color="#949494" offset="0.007518796992481203" />
+                  <Stop color="#b8deff" offset="0.30075187969924766" />
+                  <Stop color="#b8deff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

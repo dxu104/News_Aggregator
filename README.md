@@ -2,7 +2,7 @@
 
 ## Intro
 
-There will be tree independent part of the project, and they locate in separate directory
+There will be three independent parts of the project, and they locate in separate directories
 
 ## crawler
 

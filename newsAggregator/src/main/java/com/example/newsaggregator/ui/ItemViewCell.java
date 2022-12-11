@@ -16,7 +16,7 @@ import java.net.URL;
 /**
  * ItemCell for ListView of Homepage.
  *
- * @author alex
+ * @author Jianhua Tan
  */
 public class ItemViewCell extends BaseCell {
     @FXML

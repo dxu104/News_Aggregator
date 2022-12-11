@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * A tool to parse data to render a NewsList.
  *
- * @author alex
+ * @author Jianhua Tan
  */
 public class ItemSmallController {
 

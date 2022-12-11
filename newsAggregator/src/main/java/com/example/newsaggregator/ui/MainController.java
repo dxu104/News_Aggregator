@@ -27,7 +27,7 @@ import static javafx.scene.control.Tab.SELECTION_CHANGED_EVENT;
 /**
  * MainController for Main Application. It is necessary to run the application.
  *
- * @author alex
+ * @author Jianhua Tan
  */
 public class MainController {
     @FXML

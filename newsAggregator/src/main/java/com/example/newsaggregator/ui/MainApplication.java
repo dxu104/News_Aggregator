@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * MainApplication necessary to run the application.
  *
- * @author alex
+ * @author Jianhua Tan
  */
 public class MainApplication extends Application {
 
@@ -38,20 +38,5 @@ public class MainApplication extends Application {
         launch();
     }
 
-//    @Override
-//    public void start(Stage stage) throws IOException {
-//        stage.setTitle("NewsAggregator");
-//        WebView webView = new WebView();
-//        webView.getEngine().load("http://www.baidu.com");
-//        StackPane root = new StackPane();
-//        root.getChildren().add(webView);
-//        Scene scene = new Scene(root);
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-//
-//    public static void main(String[] args) throws Exception {
-//        launch();
-//    }
 
 }

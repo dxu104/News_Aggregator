@@ -147,7 +147,7 @@ public class MainController {
                 });
             }
         };
-        new Timer().schedule(timerTask, 3000);
+        new Timer().schedule(timerTask, 3500);
 
 
     }

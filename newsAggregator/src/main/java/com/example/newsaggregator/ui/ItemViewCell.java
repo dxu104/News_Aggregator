@@ -55,7 +55,7 @@ public class ItemViewCell extends BaseCell {
             webview.setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent mouseEvent) {
-                    System.out.println("click: title = " + newsItem.getTitle());
+                    PopWindow.showPopWindow(newsItem.getID());
                 }
             });
         }

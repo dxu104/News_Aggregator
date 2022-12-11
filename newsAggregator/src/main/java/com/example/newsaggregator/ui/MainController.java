@@ -18,7 +18,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.web.WebView;
 
 import java.util.*;
 
@@ -89,6 +88,9 @@ public class MainController {
     private ObservableList<NewsItem> dataListABC = FXCollections.observableArrayList();
     private ObservableList<NewsItem> dataListKing5 = FXCollections.observableArrayList();
 
+    public static final String AppName = "News Aggregator";
+    public static final int ScreenWidth = 480;      // width of the application
+    public static final int ScreenHeight = 800;     // height of the application
 
     @FXML
     public void initialize() {

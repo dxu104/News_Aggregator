@@ -39,10 +39,10 @@ It is an independent application called News Aggregator, which is developed on I
 
 ## NewsAggregator_JavaWeb
 
- NewsAggregator_JavaWeb is an independent module, which is response to receive requests from front end and response JSON object. This module archetype was maven-archetype-webapp and  developed on IntelliJ IDEA and JDK1.8. Please following step to import and run it:
+ NewsAggregator_JavaWeb is an independent module, which is response to receive requests from front end and response JSON object. This module archetype was maven-archetype-webapp and  developed on IntelliJ IDEA and JDK1.8. Please refer to following steps to import and run it:
 1.	Please depoly apache-tomcat-9.0.69 into your computer. More details had been instructed in the last section in the INFO5100. 
-2.	Import the project in the root directory named newsAggregator_JavaWeb into your IDE. 
-3.	All external libraries and plugins were downloaded by pom.XML file.
+2.	Import the project  named newsAggregator_JavaWeb in the GitHub root directory into your IDE. 
+3.	All external libraries and plugins were downloaded by pom.XML file automatically.
 4.	Please **Right-click** newsEntityServlet class or newsListServlet class located in src >> main >> java >>web package and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
 5.	Finally, open your browse, input following two URL: http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
         http://localhost:8080/newsAggregatorModule/newsEntity?ID=10

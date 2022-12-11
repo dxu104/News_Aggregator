@@ -43,10 +43,10 @@ It is an independent application called News Aggregator, which is developed on I
 1.	Please depoly apache-tomcat-9.0.69 into your computer. More details had been instructed in the last section in the INFO5100. 
 2.	Import the project  named newsAggregator_JavaWeb in the GitHub root directory into your IDE. 
 3.	All external libraries and plugins were downloaded by pom.XML file automatically.
-4.	Please **Right-click** newsEntityServlet class or newsListServlet class located in src >> main >> java >>web package and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
-5.	Finally, open your browse, input following two URL: http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
+4.	Please **Right-click**  `NewsAggregator` and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
+5.	After starting the module,pen your browse, input following two URLs: http://localhost:8080/newsAggregatorModule/newsList?  channelID=3&pageSize=10&page=10
         http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
-6.	You could modify parameters such as channelID, pageSize, page in the first URL as well as ID(newsID) in the second URL;
+6.	You were alloweed to modify parameters such as channelID, pageSize, page in the first URL as well as ID(newsID) in the second URL;
 7.	If you saw JSON objects, Congratulations!
 
 

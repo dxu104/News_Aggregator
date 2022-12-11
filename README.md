@@ -37,5 +37,18 @@ It is an independent application called News Aggregator, which is developed on I
 + Ide would automatically download libraries from **Maven** which have been set up in the `pom.xml`. If some libraries could not downloaded successfully, please **Right-click** the `pom.xml` and choose these options: `Maven >> Reload project`, it should work normally.
 + Finally, when you move to this step, that means all required libraries are settled. Then, please **Right-click** the main class, `MainApplication` , to run the application, here is its whole path for your conference, `src >> main >> java >> com >> example >> newsaggregator >> ui >> MainApplication`.  Now, it should work successfully!
 
+## NewsAggregator_JavaWeb
+
+ NewsAggregator_JavaWeb is an independent module, which is response to receive requests from front end and response JSON object. This module archetype was maven-archetype-webapp and  developed on IntelliJ IDEA and JDK1.8. Please following step to import and run it:
+1.	Please depoly apache-tomcat-9.0.69 into your computer. More details had been instructed in the last section in the INFO5100. 
+2.	Import the project in the root directory named newsAggregator_JavaWeb into your IDE. 
+3.	All external libraries and plugins were downloaded by pom.XML file.
+4.	Please **Right-click** newsEntityServlet class or newsListServlet class located in src >> main >> java >>web package and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
+5.	Finally, open your browse, input following two URL: http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
+        http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
+6.	You could modify parameters such as channelID, pageSize, page in the first URL as well as ID(newsID) in the second URL;
+7.	If you saw JSON objects, Congratulations!
+![image](https://user-images.githubusercontent.com/90865804/206894083-2f3b0a88-c40f-4cdc-a6d0-49c3d5ae4a64.png)
+
 
 

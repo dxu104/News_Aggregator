@@ -48,7 +48,6 @@ It is an independent application called News Aggregator, which is developed on I
         http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
 6.	You could modify parameters such as channelID, pageSize, page in the first URL as well as ID(newsID) in the second URL;
 7.	If you saw JSON objects, Congratulations!
-![image](https://user-images.githubusercontent.com/90865804/206894083-2f3b0a88-c40f-4cdc-a6d0-49c3d5ae4a64.png)
 
 
 

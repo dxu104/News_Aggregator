@@ -10,7 +10,11 @@
 
 <AnchorPane fx:id="anchorpane_detail" prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.NewsDetailController">
    <children>
-      <Label fx:id="label_title" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" text="Label" />
+      <Label fx:id="label_title" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #FFE4C4;" text="loading..." textAlignment="CENTER" textFill="#212f3c" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
       <Button fx:id="button_save" focusTraversable="false" layoutY="760.0" maxHeight="40.0" maxWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="Save">
          <font>
             <Font size="18.0" />
@@ -28,9 +32,9 @@
       </Button>
       <Separator layoutY="758.0" maxHeight="0.6" maxWidth="480.0" opacity="0.12" prefHeight="0.6" prefWidth="480.0" style="-fx-background-color: #000000;" />
       <WebView fx:id="webview_detail" layoutY="90.0" maxHeight="668.0" maxWidth="480.0" prefHeight="668.0" prefWidth="480.0" />
-      <Label fx:id="label_info" layoutY="60.0" maxHeight="30.0" maxWidth="480.0" prefHeight="30.0" prefWidth="480.0" text="Label">
+      <Label fx:id="label_info" layoutY="60.0" maxHeight="30.0" maxWidth="480.0" prefHeight="30.0" prefWidth="480.0" style="-fx-background-color: #FFE4C4;" text="loading..." textFill="#4d4b4b">
          <font>
-            <Font size="16.0" />
+            <Font size="14.0" />
          </font>
       </Label>
    </children>

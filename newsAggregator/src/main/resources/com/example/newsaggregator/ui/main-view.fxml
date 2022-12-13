@@ -59,7 +59,7 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Label fx:id="mainTitleLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="200.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: linear-gradient(#6FB1FC, #4364F7, #0052D4);" text="News Aggregator" visible="false">
+      <Label fx:id="mainTitleLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="200.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #254BE5;" text="News Aggregator" visible="false">
          <font>
             <Font size="24.0" />
          </font>
@@ -74,5 +74,15 @@
             </RadialGradient>
          </textFill>
       </Label>
+      <Button fx:id="button_search" layoutY="760.0" maxHeight="40.0" maxWidth="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" text="Search" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_profile" layoutX="240.0" layoutY="760.0" maxHeight="40.0" maxWidth="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" text="Profile" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

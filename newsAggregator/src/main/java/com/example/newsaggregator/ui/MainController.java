@@ -53,6 +53,12 @@ public class MainController {
     private Tab tab_king5;
 
     @FXML
+    private Button button_search;
+
+    @FXML
+    private Button button_profile;
+
+    @FXML
     private ListView listview_seattle;
     @FXML
     private ListView listview_cnn;
@@ -71,6 +77,7 @@ public class MainController {
 
     private int currentChannel = ChannelSeattleTimes;
     private int currentTabIndex = 0;
+    private double lastScrollPosition = 0;
 
     private int pageSeattle = 0;
     private int pageCNN = 0;
@@ -95,6 +102,9 @@ public class MainController {
     @FXML
     public void initialize() {
         currentChannel = ChannelSeattleTimes;
+
+        button_search.setVisible(false);
+        button_profile.setVisible(false);
 
         initListView();
 
@@ -209,8 +219,19 @@ public class MainController {
 
                 // request for and load more data for next page.
                 if (scrollPosition > 0.95) {    // load more data for next page
+                    button_search.setVisible(true);
+                    button_profile.setVisible(true);
                     requestNewsList();
+                } else {
+                    if (lastScrollPosition > scrollPosition) {      // scroll up
+                        button_search.setVisible(true);
+                        button_profile.setVisible(true);
+                    } else {
+                        button_search.setVisible(false);
+                        button_profile.setVisible(false);
+                    }
                 }
+                lastScrollPosition = scrollPosition;
             }
         }
     }

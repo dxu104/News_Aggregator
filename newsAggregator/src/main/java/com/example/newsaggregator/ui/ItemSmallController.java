@@ -141,7 +141,12 @@ public class ItemSmallController {
         return htmlStr;
     }
 
-    private static final String formateTime(Long time) {
+    /**
+     * Create a time string with standard format.
+     * @param time
+     * @return
+     */
+    public static final String formateTime(Long time) {
         Date dateparam = new Date(time);
 
         Date currentTime = new Date(System.currentTimeMillis());

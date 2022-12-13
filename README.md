@@ -11,7 +11,7 @@ cd crawler
 mvn clean package
 java -jar target/crawler-1.0-SNAPSHOT.jar {dbPath} 
 ```
-Notice: {dbPath} depend on where the sqlite database is , here I believe that it's `../newsAggregatorModule/src/main/resources/news.db`
+Notice: `{dbPath}` depend on where the sqlite database is , here I believe that it's `../news.db`
 
 then you should see the output from terminal:
 ```shell

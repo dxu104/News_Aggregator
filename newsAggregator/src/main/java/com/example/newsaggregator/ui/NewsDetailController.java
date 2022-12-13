@@ -6,12 +6,9 @@ import com.example.newsaggregator.http.HttpRequest;
 import com.example.newsaggregator.http.ParseTool;
 import com.example.newsaggregator.models.News;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.web.WebView;
 
 import java.util.Random;
@@ -22,7 +19,7 @@ import java.util.Random;
  *
  * @author Jianhua Tan
  */
-public class NewsDetailController {
+public class NewsDetailController extends BaseController{
     @FXML
     private Label label_title;
     @FXML
@@ -38,28 +35,32 @@ public class NewsDetailController {
 
     private long newsId;
 
-    private String[] LabelColors = {"#F9E79F", "#F5F5DC", "#FFF8DC", "#87CEFA", "#40E0D0", "#ABEBC6"};
+    /**
+     * List of Colors to render randomly the background of title.
+     */
+    private String[] LabelColors = {"#F9E79F", "#F5F5DC", "#FFF8DC", "#87CEFA", "#40E0D0",
+            "#ABEBC6", "#FFE4E1", "#FFFACD", "#E6E6FA", "#FFDAB9"};
 
 
     @FXML
     public void initialize() {
-        System.out.println("initialize() NewsDetailController _________");
         Random ran = new Random();
         int corIn = ran.nextInt(6);
-        label_title.setStyle("-fx-background-color: " + LabelColors[corIn % 5] + ";");
-        label_info.setStyle("-fx-background-color: " + LabelColors[corIn % 5] + ";");
+        label_title.setStyle("-fx-background-color: " + LabelColors[corIn % 10] + ";");
+        label_info.setStyle("-fx-background-color: " + LabelColors[corIn % 10] + ";");
 
     }
 
     /**
      * The start method is used to communicate with PopWindow.
      *
-     * @param popup
+     * @param objects
      */
-    public void start(PopWindow popup, long nId){
+    public void start(Object... objects){
         // get data and process, then hide the popwindow
         // popup.hide();
-        newsId = nId;
+
+        newsId = (long) objects[0];
         requestNewsDetail(newsId);
     }
 

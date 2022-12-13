@@ -160,25 +160,28 @@ public class ItemSmallController {
                         return i + " hours ago";
                     else if (i2 > -60)
                         return 60 + i2 + " minutes ago";
-                    else return "just now";
+                    else return "Just now";
                 } else {
                     int i1 = currentTime.getMinutes() - dateparam.getMinutes();
                     if (i1 > 0) {
-                        return i1 + "minutes ago";
+                        return i1 + " minutes ago";
                     } else
-                        return "just now";
+                        return "Just now";
                 }
             case 1:
-                return "Yesterday" + formateStr(dateparam.getHours() + "") + ":" + formateStr(dateparam.getMinutes() + "") + ":" + formateStr("" + dateparam.getSeconds());
+                return "Yesterday, " + formateStr(dateparam.getHours() + "") + ":" + formateStr(dateparam.getMinutes() + "") + ":" + formateStr("" + dateparam.getSeconds());
             case 2:
-                return "2 days ago" + formateStr(dateparam.getHours() + "") + ":" + formateStr(dateparam.getMinutes() + "") + ":" + formateStr("" + dateparam.getSeconds());
+                return "2 days ago, " + formateStr(dateparam.getHours() + "") + ":" + formateStr(dateparam.getMinutes() + "") + ":" + formateStr("" + dateparam.getSeconds());
             default:
                 return currentTime.getDate() - dateparam.getDate() + " days ago";
         }
     }
 
     private static final String formateStr(String str) {
-        return new String().format("%02d", str);
+        if (str.length() == 1) {
+            return "0" + str;
+        }
+        return str;
     }
 
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="480.0" style="-fx-background-color: #FFFAF0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.SearchController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #254BE5;" text="Search">
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#b8deff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_search" layoutX="57.0" layoutY="239.0" prefHeight="64.0" prefWidth="373.0" promptText="Please type in keywords to search...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button_search" layoutX="175.0" layoutY="356.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="152.0" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

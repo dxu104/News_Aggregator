@@ -23,8 +23,8 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), MainController.ScreenWidth, MainController.ScreenHeight);
-        stage.setTitle(MainController.AppName);
+        Scene scene = new Scene(fxmlLoader.load(), ConfigController.ScreenWidth, ConfigController.ScreenHeight);
+        stage.setTitle(ConfigController.APP_NAME);
         stage.setScene(scene);
         stage.show();
     }

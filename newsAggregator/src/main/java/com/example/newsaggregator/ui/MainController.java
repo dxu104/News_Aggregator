@@ -95,9 +95,6 @@ public class MainController {
     private ObservableList<NewsItem> dataListABC = FXCollections.observableArrayList();
     private ObservableList<NewsItem> dataListKing5 = FXCollections.observableArrayList();
 
-    public static final String AppName = "News Aggregator";
-    public static final int ScreenWidth = 480;      // width of the application
-    public static final int ScreenHeight = 800;     // height of the application
 
     @FXML
     public void initialize() {
@@ -125,6 +122,19 @@ public class MainController {
         tab_foxnews.setOnSelectionChanged(new myEventHandler());
         tab_abc.setOnSelectionChanged(new myEventHandler());
         tab_king5.setOnSelectionChanged(new myEventHandler());
+
+        button_search.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                PopWindow.showPopWindow(ConfigController.XML_SEARCH);
+            }
+        });
+        button_profile.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+
+            }
+        });
 
     }
 

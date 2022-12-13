@@ -17,23 +17,37 @@ import java.io.IOException;
 public class PopWindow extends AnchorPane {
     private static PopWindow popup;
 
-    private NewsDetailController controller;
+//    private NewsDetailController controller;
     private static Stage primaryStage;
 
     /**
      * Private constructor to keep a single reference.
      */
-    private PopWindow(long newsId){
+    private PopWindow(Object... objects){
         try{
-            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("news-detail.fxml"));
+            String xmlStr = (String) objects[0];
+//            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("news-detail.fxml"));
+            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource(xmlStr));
             Parent root = fxmlloader.load();
             primaryStage = new Stage();
             primaryStage.setResizable(false);      // make the size of the window unchangeable
-            primaryStage.setTitle(MainController.AppName);
-            primaryStage.setScene(new Scene(root,MainController.ScreenWidth, MainController.ScreenHeight));
+            primaryStage.setTitle(ConfigController.APP_NAME);
+            primaryStage.setScene(new Scene(root,ConfigController.ScreenWidth, ConfigController.ScreenHeight));
 
-            NewsDetailController controller = fxmlloader.getController();
-            controller.start(popup, newsId);
+            if (xmlStr.equals(ConfigController.XML_NEWS_DETAIL)) {
+                NewsDetailController controller = fxmlloader.getController();
+                controller.start(objects[1]);
+
+            } else if (xmlStr.equals(ConfigController.XML_SEARCH)) {
+                SearchController searchController = fxmlloader.getController();
+                searchController.start();
+
+            } else if (xmlStr.equals(ConfigController.XML_SEARCH_LIST)) {
+                SearchListController searchListController = fxmlloader.getController();
+                searchListController.start(objects[1]);
+
+            }
+
 
         }catch(IOException ex){
             ex.printStackTrace();
@@ -44,8 +58,18 @@ public class PopWindow extends AnchorPane {
      * Show the PopWindow
      * @return
      */
-    public static String showPopWindow(long newsId){
-        popup = new PopWindow(newsId);
+    public static String showPopWindow(Object... objects){
+        String xmlStr = (String)objects[0];
+
+        if (xmlStr.equals(ConfigController.XML_NEWS_DETAIL)) {
+            popup = new PopWindow(ConfigController.XML_NEWS_DETAIL, objects[1]);
+
+        } else if (xmlStr.equals(ConfigController.XML_SEARCH)) {
+            popup = new PopWindow(ConfigController.XML_SEARCH);
+
+        } else if (xmlStr.equals(ConfigController.XML_SEARCH_LIST)) {
+            popup = new PopWindow(ConfigController.XML_SEARCH_LIST, objects[1]);
+        }
 
         if (primaryStage != null) {
             primaryStage.showAndWait();

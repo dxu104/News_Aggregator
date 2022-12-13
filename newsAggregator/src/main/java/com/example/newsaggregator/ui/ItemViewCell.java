@@ -14,7 +14,7 @@ import javafx.scene.web.WebView;
 import java.net.URL;
 
 /**
- * ItemCell for ListView of Homepage.
+ * ItemCell for ListView of Homepage and Searching response.
  *
  * @author Jianhua Tan
  */
@@ -55,7 +55,7 @@ public class ItemViewCell extends BaseCell {
             webview.setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent mouseEvent) {
-                    PopWindow.showPopWindow(newsItem.getID());
+                    PopWindow.showPopWindow(ConfigController.XML_NEWS_DETAIL, newsItem.getID());
                 }
             });
         }

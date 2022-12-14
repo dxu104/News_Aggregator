@@ -2,16 +2,36 @@ package com.example.newsaggregator.ui;
 
 import com.example.newsaggregator.models.NewsItem;
 import com.example.newsaggregator.widgets.BaseCell;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.web.WebView;
 
 import java.net.URL;
 
+/**
+ * ItemCell for ListView of Homepage and Searching response.
+ *
+ * @author Jianhua Tan
+ */
 public class ItemViewCell extends BaseCell {
+    @FXML
+    private ImageView imageview_cover;
+
+    private NewsItem itemModel;
+
+
 
     public ItemViewCell() {
-        super(ItemViewCell.class.getResource("itemsmall-view.fxml"));
-//        System.out.println("列表 itemview URL视图地址 = " + MainApplication.class.getClass().getResource("itemsmall-view.fxml"));
-//        System.out.println("列表 itemview URL视图地址 = " + getClass().getResource("itemsmall-view.fxml"));
-        System.out.println("列表 itemview URL视图地址 = " + ItemViewCell.class.getResource("itemsmall-view.fxml"));
+//        super(ItemViewCell.class.getResource("itemsmall-view.fxml"));
+        super(null);
+//        System.out.println("itemview URL = " + MainApplication.class.getClass().getResource("itemsmall-view.fxml"));
+//        System.out.println("itemview URL = " + getClass().getResource("itemsmall-view.fxml"));
+//        System.out.println("itemview URL = " + ItemViewCell.class.getResource("itemsmall-view.fxml"));
 
     }
 
@@ -22,11 +42,24 @@ public class ItemViewCell extends BaseCell {
     @Override
     public void bindData(Object item) {
 //        setText(((NewsItem)item).getTitle());
-        if (item instanceof ItemViewCell) {
-            System.out.println("它属于 ItemViewCell _____");
-        } else if (item instanceof NewsItem) {
-            System.out.println("它属于 NewsItem _____");
+        if (item instanceof NewsItem) {
+            NewsItem newsItem = (NewsItem) item;
+            itemModel = newsItem;
+
+            WebView webview = new WebView();
+            webview.setPrefWidth(445);
+            webview.setPrefHeight(130);
+            webview.getEngine().loadContent(ItemSmallController.getItemHtml(newsItem));
+            setGraphic(webview);
+
+            webview.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    PopWindow.showPopWindow(ConfigController.XML_NEWS_DETAIL, newsItem.getID());
+                }
+            });
         }
+
     }
 
     @Override

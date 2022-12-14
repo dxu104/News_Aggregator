@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.SearchListController">
+   <children>
+      <Label fx:id="label_response" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #254BE5;" text="Search">
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#b8deff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_nodata" alignment="CENTER" contentDisplay="CENTER" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" prefHeight="740.0" prefWidth="480.0" style="-fx-background-color: #FFFAF0;" text="No result of searching">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview_seachlist" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" prefHeight="740.0" prefWidth="480.0" visible="false" />
+   </children>
+</AnchorPane>

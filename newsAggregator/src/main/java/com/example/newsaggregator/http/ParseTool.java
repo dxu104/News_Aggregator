@@ -2,6 +2,7 @@ package com.example.newsaggregator.http;
 
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
+import com.example.newsaggregator.models.News;
 import com.example.newsaggregator.models.NewsItem;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 /**
  * ParseTool to parse data from Http response.
  *
- * @author alex
+ * @author Jianhua Tan
  */
 public class ParseTool {
 
@@ -39,6 +40,32 @@ public class ParseTool {
         }
 
         return newsItems;
+    }
+
+    /**
+     * Parse jsonObject to a News Model.
+     * @param jsonObject
+     * @return
+     */
+    public static final News parseNewsDetail(JSONObject jsonObject) {
+        News news = new News();
+
+        if (jsonObject != null) {
+            news.setID(jsonObject.getLong("ID"));
+            news.setURL(jsonObject.getString("URL"));
+            news.setAuthor(jsonObject.getString("author"));
+            news.setChannelID(jsonObject.getLong("channelID"));
+            news.setContent(jsonObject.getString("content"));
+            news.setCover(jsonObject.getString("cover"));
+            news.setCreatedTime(jsonObject.getLong("createdTime"));
+            news.setDescription(jsonObject.getString("description"));
+            news.setGuid(jsonObject.getString("guid"));
+            news.setPostedTime(jsonObject.getLong("postedTime"));
+            news.setTitle(jsonObject.getString("title"));
+            news.setUpdatedTime(jsonObject.getLong("updatedTime"));
+        }
+
+        return news;
     }
 
 }

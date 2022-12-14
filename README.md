@@ -47,6 +47,7 @@ It is an independent application called News Aggregator, which is developed on I
 3.	All external libraries and plugins were downloaded by pom.XML file automatically.
 4.	Please **Right-click**  `NewsAggregator` and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
 5.	After starting the module,pen your browse, input following seven URLs:
+
 	http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
 
 	http://localhost:8080/newsAggregatorModule/newsEntity?ID=10

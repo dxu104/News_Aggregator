@@ -9,7 +9,7 @@ There will be three independent parts of the project, and they locate in separat
 ```shell
 cd crawler
 mvn clean package
-java -jar target/crawler-1.0-SNAPSHOT.jar {dbPath} 
+java -jar target/crawler-1.0-SNAPSHOT-jar-with-dependencies.jar {dbPath} 
 ```
 Notice: `{dbPath}` depend on where the sqlite database is , here I believe that it's `../news.db`
 

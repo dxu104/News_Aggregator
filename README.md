@@ -30,6 +30,7 @@ It means the crawler is working! Congratulations!
 ## News Aggregator
 
 It is an independent application called News Aggregator, which is developed on IntelliJ Idea and JDK18. Here is some instructions to help you import and run it:
++ At first, it is important to help you run the project normally later. Please make sure you are using `openJDK18` for the application.
 + Import the project in the folder called  `newsAggregator`  into your ide. IntelliJ Idea is recommended.
 	+ If there is a popup window asking you to choose the type of the project when you try to import the project, please choose it as a  `JavaFX`  project.
 + The project will take some time when it is being imported, as it was developed basded on JavaFx and hence jar libraries are placed in a directory called **lib**.

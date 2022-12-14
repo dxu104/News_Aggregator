@@ -10,16 +10,26 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
+                <property name="poolMaximumActiveConnections" value="1"/>
                 <property name="driver" value="org.sqlite.JDBC"/>
-                <property name="url" value="jdbc:sqlite::resource:news.db"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123"/>
+<!--                                <property name="url" value="jdbc:sqlite:/home/ubuntu/finalProjectCode/news.db"/>-->
+                <property name="url" value="jdbc:sqlite:/Users/xudecheng/JAVA/INFO5100/JavaWebDemo/NewsAggregator/newsAggregatorModule/src/main/resources/news.db"/>
+                <!--                <property name="username" value="root"/>-->
+                <!--                <property name="password" value="123"/>-->
+
+
             </dataSource>
+
         </environment>
     </environments>
+
     <mappers>
-        <mapper resource="ChannelMapper.xml"></mapper>
+
+        <!--        <mapper resource="ChannelMapper.xml"></mapper>-->
         <mapper resource="NewsMapper.xml"></mapper>
-        <mapper resource="newsViewCounter.xml"></mapper>
+        <!--        <mapper resource="newsSearchMapper.xml"></mapper>-->
+        <!--        <mapper resource="newsViewCounterMapper.xml"></mapper>-->
+
+
     </mappers>
 </configuration>

@@ -2,11 +2,48 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
 <mapper namespace="Mapper.newsMapper">
+    <insert id="newsFavorInsert">
+        insert into UserSaved ( userID,newsID)
+        values ( #{userID},#{newsID});
+    </insert>
+
+    <delete id="newsFavorDelete">
+        delete
+        from UserSaved
+        where newsID=#{newsID} And userID = #{userID} ;
+    </delete>
+
 
     <select id="selectAll" resultType="POJO.news">
         select * from News where ID = #{ID};
     </select>
+
+    <select id="selectByChannelID" resultType="POJO.news">
+        select ID,channelID,title,cover,description,postedTime from News
+        where channelID =#{channelID} ORDER BY postedTime DESC limit #{limit} offset #{offset};
+    </select>
+
+    <select id="newsSearch" resultType="POJO.news">
+
+        select ID,channelID,title,cover,description,postedTime from  news where title like '%'||#{keyWord}||'%'
+        ORDER BY postedTime DESC;
+    </select>
+    <select id="userFavorList" resultType="POJO.news">
+        select ID,channelID,title,cover,description,postedTime from news, UserSaved where userID =#{userID} And news.ID = userSaved.newsID;
+
+
+    </select>
+
+    <select id="isSaved" resultType="POJO.userFavor">
+        select *
+        from UserSaved where userID = #{userID} And newsID = #{newsID};
+    </select>
+
+    <update id="newsViewCounter_updated">
+        update News
+        set views = #{views}, updatedTime = #{updatedTime}  where ID=#{ID};
+    </update>
+
 
 </mapper>

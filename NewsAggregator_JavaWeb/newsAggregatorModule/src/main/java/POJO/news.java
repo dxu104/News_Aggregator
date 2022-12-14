@@ -17,20 +17,27 @@ package POJO;
 12.	GUID is subscription GUID that uniquely identifies user’s
 subscription to use news subscription services.
 */
-public class news {
 
+
+import java.net.URL;
+
+public class news {
     private Integer id;
     private Integer ChannelID;
-   private String URL;
-   private String title;
-   private String author;
-   private String cover;
-   private String description;
-   private String content;
-  private long postedTime;
-  private long createdTime;
-  private long updatedTime;
-  private String guid;
+
+    private Integer views;
+    private String URL;
+    private String title;
+    private String author;
+    private String cover;
+    private String description;
+    private String content;
+
+
+    private long postedTime;
+    private long createdTime;
+    private long updatedTime;
+    private String guid;
 
     public Integer getID() {
         return id;
@@ -124,15 +131,25 @@ public class news {
         return guid;
     }
 
+    public Integer getViews() {
+        return views;
+    }
+
+    public void setViews(Integer views) {
+        this.views = views;
+    }
+
     public void setGuid(String guid) {
         this.guid = guid;
     }
 
+
     @Override
     public String toString() {
         return "news{" +
-                "ID=" + id +
+                "id=" + id +
                 ", ChannelID=" + ChannelID +
+                ", views=" + views +
                 ", URL='" + URL + '\'' +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +

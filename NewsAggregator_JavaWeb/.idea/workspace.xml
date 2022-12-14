@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8470476-bd87-47a2-b670-cbde9550b47b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsAggregator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/src/main/resources/ChannelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/src/main/resources/NewsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsAggregatorModule/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="d8470476-bd87-47a2-b670-cbde9550b47b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,13 +22,19 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/Mapper/channelMapper.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/Mapper/userLikedMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/service/newsService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/isSavedServlet.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/newsEntityServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/newsFavorServlet.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/newsListServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/newsSearchServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/newsViewCounterServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/java/web/userFavorListServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/resources/NewsMapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/newsAggregatorModule/src/main/resources/mybatis-config.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/newsAggregatorModule/target/classes/POJO/news.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/newsAggregatorModule/target/classes/UserLiked.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/newsAggregatorModule/target/classes/service/newsService.class" root0="FORCE_HIGHLIGHTING" />
@@ -66,11 +57,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/xudecheng/JAVA/INFO5100/JavaWebDemo/NewsAggregator/newsAggregatorModule/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xudecheng/JAVA/INFO5100_Final_NewsAgg2022/NewsAggregator_JavaWeb&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -174,6 +165,9 @@
       <workItem from="1670646666172" duration="5000" />
       <workItem from="1670646749585" duration="2467000" />
       <workItem from="1670649368178" duration="1350000" />
+      <workItem from="1670980868772" duration="1382000" />
+      <workItem from="1670983947477" duration="313000" />
+      <workItem from="1670985901319" duration="5592000" />
     </task>
     <servers />
   </component>

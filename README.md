@@ -37,6 +37,8 @@ It is an independent application called News Aggregator, which is developed on I
 + Ide would automatically download libraries from **Maven** which have been set up in the `pom.xml`. If some libraries could not downloaded successfully, please **Right-click** the `pom.xml` and choose these options: `Maven >> Reload project`, it should work normally.
 + Finally, when you move to this step, that means all required libraries are settled. Then, please **Right-click** the main class, `MainApplication` , to run the application, here is its whole path for your conference, `src >> main >> java >> com >> example >> newsaggregator >> ui >> MainApplication`.  Now, it should work successfully!
 
+
+
 ## NewsAggregator_JavaWeb
 
  NewsAggregator_JavaWeb is an independent module, which is response to receive requests from front end and response JSON object. This module archetype was maven-archetype-webapp and  developed on IntelliJ IDEA and JDK1.8. Please refer to following steps to import and run it:
@@ -44,9 +46,16 @@ It is an independent application called News Aggregator, which is developed on I
 2.	Import the project  named newsAggregator_JavaWeb in the GitHub root directory into your IDE. 
 3.	All external libraries and plugins were downloaded by pom.XML file automatically.
 4.	Please **Right-click**  `NewsAggregator` and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
-5.	After starting the module,pen your browse, input following two URLs: http://localhost:8080/newsAggregatorModule/newsList?  channelID=3&pageSize=10&page=10
-        http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
-6.	You were alloweed to modify parameters such as channelID, pageSize, page in the first URL as well as ID(newsID) in the second URL;
+5.	After starting the module,pen your browse, input following three URLs:
+	http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
+	http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
+	http://localhost:8080/newsAggregatorModule/newsSearch?keyWord=World
+        http://localhost:8080/newsAggregatorModule/userFavor?userID=1&newsID=2&collect=2
+        http://localhost:8080/newsAggregatorModule/newsViewCount?ID=1
+        http://localhost:8080/newsAggregatorModule/isSaved?userID=20221214&newsID=7
+        http://localhost:8080/newsAggregatorModule/userFavorListServlet?userID=123
+
+6.	You were alloweed to modify parameters such as channelID, pageSize, page in the first URL, and ID(newsID) in the second URL, and keyWord in the third URL etc;
 7.	If you saw JSON objects, Congratulations!
 
 

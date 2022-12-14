@@ -46,6 +46,18 @@ public class PopWindow extends AnchorPane {
                 SearchListController searchListController = fxmlloader.getController();
                 searchListController.start(objects[1]);
 
+            } else if (xmlStr.equals(ConfigController.XML_SAVED_LIST)) {
+                SavedListController savedListController = fxmlloader.getController();
+                savedListController.start();
+
+            } else if (xmlStr.equals(ConfigController.XML_ABOUT_INFO)) {
+                AboutInfoController aboutInfoController = fxmlloader.getController();
+                aboutInfoController.start();
+
+            } else if (xmlStr.equals(ConfigController.XML_MORE_VIEW)) {
+                MoreViewController moreViewController = fxmlloader.getController();
+                moreViewController.start();
+
             }
 
 
@@ -69,6 +81,16 @@ public class PopWindow extends AnchorPane {
 
         } else if (xmlStr.equals(ConfigController.XML_SEARCH_LIST)) {
             popup = new PopWindow(ConfigController.XML_SEARCH_LIST, objects[1]);
+
+        } else if (xmlStr.equals(ConfigController.XML_SAVED_LIST)) {
+            popup = new PopWindow(ConfigController.XML_SAVED_LIST);
+
+        } else if (xmlStr.equals(ConfigController.XML_ABOUT_INFO)) {
+            popup = new PopWindow(ConfigController.XML_ABOUT_INFO);
+
+        } else if (xmlStr.equals(ConfigController.XML_MORE_VIEW)) {
+            popup = new PopWindow(ConfigController.XML_MORE_VIEW);
+
         }
 
         if (primaryStage != null) {

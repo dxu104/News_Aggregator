@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="480.0" prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.MoreViewController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #254BE5;" text="More">
+            <textFill>
+                <RadialGradient centerX="1.0" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="#b8deff" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="imageview_avatar" fitHeight="117.0" fitWidth="200.0" layoutX="140.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label_username" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="223.0" maxHeight="40.0" maxWidth="300.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #00000000;" text="UserName" textAlignment="CENTER" textFill="#616060">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="40.0" layoutY="380.0" maxHeight="1.0" maxWidth="400.0" prefHeight="1.0" prefWidth="400.0" />
+      <Separator layoutX="40.0" layoutY="460.0" maxHeight="1.0" maxWidth="400.0" prefHeight="1.0" prefWidth="400.0" />
+      <Separator layoutX="40.0" layoutY="540.0" maxHeight="1.0" maxWidth="400.0" prefHeight="1.0" prefWidth="400.0" />
+      <Label fx:id="label_savedlist" layoutX="40.0" layoutY="381.0" maxHeight="78.0" maxWidth="400.0" prefHeight="78.0" prefWidth="400.0" style="-fx-background-color: #EBEDEF;" text="  Saved List" textFill="#34495e">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_about" layoutX="40.0" layoutY="462.0" maxHeight="78.0" maxWidth="400.0" prefHeight="78.0" prefWidth="400.0" style="-fx-background-color: #EBEDEF;" text="  About News Aggregator" textFill="#34495e">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

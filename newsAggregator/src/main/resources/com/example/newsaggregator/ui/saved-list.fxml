@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="480.0" prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsaggregator.ui.SavedListController">
+   <children>
+       <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="480.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #254BE5;" text="Saved Articles">
+           <textFill>
+               <RadialGradient centerX="1.0" centerY="0.5" radius="0.5">
+                   <stops>
+                       <Stop color="#b8deff" />
+                       <Stop color="WHITE" offset="1.0" />
+                   </stops>
+               </RadialGradient>
+           </textFill>
+           <font>
+               <Font size="24.0" />
+           </font>
+       </Label>
+       <Label fx:id="label_nosaved" alignment="CENTER" contentDisplay="CENTER" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" prefHeight="740.0" prefWidth="480.0" style="-fx-background-color: #FFFAF0;" text="You have not saved any articles.">
+           <font>
+               <Font size="24.0" />
+           </font>
+       </Label>
+       <ListView fx:id="listview_savedlist" layoutY="60.0" maxHeight="740.0" maxWidth="480.0" prefHeight="740.0" prefWidth="480.0" visible="false" />
+   </children>
+</AnchorPane>

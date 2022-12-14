@@ -79,7 +79,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="button_profile" layoutX="240.0" layoutY="760.0" maxHeight="40.0" maxWidth="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" text="Profile" visible="false">
+      <Button fx:id="button_profile" layoutX="240.0" layoutY="760.0" maxHeight="40.0" maxWidth="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" text="More" visible="false">
          <font>
             <Font size="18.0" />
          </font>

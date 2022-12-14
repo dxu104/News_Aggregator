@@ -132,7 +132,7 @@ public class MainController {
         button_profile.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-
+                PopWindow.showPopWindow(ConfigController.XML_MORE_VIEW);
             }
         });
 

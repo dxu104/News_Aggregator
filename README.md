@@ -48,19 +48,13 @@ It is an independent application called News Aggregator, which is developed on I
 4.	Please **Right-click**  `NewsAggregator` and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
 5.	After starting the module,pen your browse, input following seven URLs:
 
-	http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10
-
-	http://localhost:8080/newsAggregatorModule/newsEntity?ID=10
-
-	http://localhost:8080/newsAggregatorModule/newsSearch?keyWord=World
-
-        http://localhost:8080/newsAggregatorModule/userFavor?userID=1&newsID=2&collect=2
-
-        http://localhost:8080/newsAggregatorModule/newsViewCount?ID=1
-
-        http://localhost:8080/newsAggregatorModule/isSaved?userID=20221214&newsID=7
-        
-        http://localhost:8080/newsAggregatorModule/userFavorListServlet?userID=123
+	[(1)](http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10)
+        [(2)](http://localhost:8080/newsAggregatorModule/newsEntity?ID=10)
+        [(3)](http://localhost:8080/newsAggregatorModule/newsSearch?keyWord=World)
+        [(4)](http://localhost:8080/newsAggregatorModule/userFavor?userID=1&newsID=2&collect=2)
+        [(5)](http://localhost:8080/newsAggregatorModule/newsViewCount?ID=1)
+        [(6)](http://localhost:8080/newsAggregatorModule/isSaved?userID=20221214&newsID=7)
+        [(7)](http://localhost:8080/newsAggregatorModule/userFavorListServlet?userID=123)
 
 6.	You were alloweed to modify parameters such as channelID, pageSize, page in the first URL, and ID(newsID) in the second URL, and keyWord in the third URL etc;
 7.	If you saw JSON objects, Congratulations!

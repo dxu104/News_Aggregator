@@ -48,7 +48,7 @@ It is an independent application called News Aggregator, which is developed on I
 4.	Please **Right-click**  `NewsAggregator` and choose **RUN MAVEN**>>**tomcat7:run** to start this module.
 5.	After starting the module,pen your browse, input following seven URLs:
 
-	[(1)](http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10)
+	[http://localhost:8080/newsAggregatorModule/newsList?channelID=3&pageSize=10&page=10]
         [(2)](http://localhost:8080/newsAggregatorModule/newsEntity?ID=10)
         [(3)](http://localhost:8080/newsAggregatorModule/newsSearch?keyWord=World)
         [(4)](http://localhost:8080/newsAggregatorModule/userFavor?userID=1&newsID=2&collect=2)

@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface newsMapper {
+public interface    newsMapper {
     POJO.news selectAll(Integer ID);
     List<news> newsSearch(String keyWord);
     List<news> selectByChannelID(@Param("channelID") Integer channelID, @Param("limit") Integer limit, @Param("offset") Integer offset);

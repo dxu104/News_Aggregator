@@ -1,7 +1,6 @@
 # INFO5100_Final_NewsAgg2022
 
 ## Intro
-
 There will be three independent parts of the project, and they locate in separate directories
 
 ## crawler
@@ -62,3 +61,8 @@ It is an independent application called News Aggregator, which is developed on I
 
 
 
+## Demo
+![alt text](public/image-2.png)
+![alt text](public/.png)
+![alt text](public/.png)
+![alt text](public/png)

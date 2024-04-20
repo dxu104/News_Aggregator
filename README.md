@@ -63,6 +63,6 @@ It is an independent application called News Aggregator, which is developed on I
 
 ## Demo
 ![alt text](public/image-2.png)
-![alt text](public/.png)
-![alt text](public/.png)
-![alt text](public/png)
+![alt text](public/image-1.png)
+![alt text](public/image.png)
+![alt text](public/image-3.png)

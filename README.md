@@ -61,7 +61,7 @@ It is an independent application called News Aggregator, which is developed on I
 
 
 
-## Demo
+## DEMO
 
 ### Home Page
 

@@ -67,26 +67,26 @@ It is an independent application called News Aggregator, which is developed on I
 
 ![alt text](public/home_page.png)
 
-
+<br><br>
 
 ### Search Page
 
-
+<br><br>
 
 ![alt text](public/search_page.png)
 
-
+<br><br>
 
 ### Search Result
 
-
+<br><br>
 
 ![alt text](public/search_result.png)
 
-
+<br><br>
 
 ### Article Page
 
-
+<br><br>
 
 ![alt text](public/article.png)
